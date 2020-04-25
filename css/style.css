@@ -1,0 +1,94 @@
+body {
+    color: #131316;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.text-yellow {
+    color: #ffe600;
+}
+
+.text-white {
+    color: #ffffff;
+}
+
+h1, h2, h3, h4 {
+ text-transform: uppercase;
+}
+
+h4, .btn1 {
+    letter-spacing: -.025em;
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 40px;
+    margin: 50px 0 110px;
+    letter-spacing: .05em;
+}
+
+h4 {
+    font-size: 15px;
+}
+
+header {
+    background: url('../img/bg-header.jpg') no-repeat center;
+    background-size: cover;
+    height: calc(100vh - 120px);
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+header:before {
+    content: '';
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	background: rgba(19,19,22,.5);
+}
+
+header .content {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#logo-header {
+	width: 89px;
+	height: 89px;
+	background: url(../img/logo-yellow-moon-header.svg) no-repeat center;
+	background-size: cover;
+	margin: 0 auto 55px;
+}
+
+.btn1 {
+	padding: 20px 80px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #ffffff;
+	border: solid #ffe600 1px;
+	transition: .4s;
+}
+
+.btn1:hover, .btn1:active {
+	background: #ffe600;
+	color: #131316;
+}
+
+#arrow {
+	height: 27px;
+	width: 27px;
+	margin: auto;
+	display: block;
+	border-right: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+	transform: rotate(45deg);
+	margin-top: 55px;
+	transition: .6s transform;
+}
+
+#arrow:hover {
+	transform: rotate(45deg) scale(1.3);
+}
