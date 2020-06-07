@@ -520,8 +520,8 @@ select {
     h1 {
         padding-top: 110px;
     }
-    header h1,
-    header h4,
+    #intro h1,
+    #intro h4,
     #intro .btn1 {
         margin-left: 50px;
     }
