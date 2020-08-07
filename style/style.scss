@@ -377,7 +377,7 @@ section {
 }
 
 .card {
-    text-align: left;
+    text-align: center;
     border-style: solid;
     border-width: 1px;
     border-color: rgba(145, 145, 145, .3);
@@ -385,16 +385,17 @@ section {
     box-shadow: 0px 0px 60px 0px transparentize($color: $dark-green, $amount: .95);
     padding: 26px 20px;
     margin: 30px auto;
-    width: 100%;
+    width: 120px;
     max-width: 420px;
 
     @include grid;
-    grid-template-columns: 110px 1fr 100px;
+    grid-template-columns: 100%;
 
     transition: .4s;
 
     img {
         height: 60px;
+        margin: auto;
     }
 }
 
@@ -403,7 +404,6 @@ section {
     color: $green;
     font-weight: $bold;
     line-height: 1.364;
-    text-align: right;
 
     &::after {
         content: 'PM';
@@ -433,6 +433,17 @@ footer {
     display: none;
 }
 
+@media (min-width: 480px) {
+    .card {
+        width: calc(100% - 42px);
+        text-align: left;
+        grid-template-columns: 110px 1fr 100px;
+
+        .time {
+            text-align: right;
+        }
+    }
+}
 
 
 
