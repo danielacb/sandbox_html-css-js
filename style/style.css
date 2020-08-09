@@ -129,7 +129,7 @@ header nav .container {
   right: -300px;
   text-align: right;
   padding: 30px;
-  width: 300px;
+  width: calc(100% - 90px);
   height: 100vh;
   -webkit-transition: .6s;
   transition: .6s;
@@ -253,7 +253,16 @@ section {
   margin: 60px auto 0;
 }
 
+#features {
+  margin-top: -80px;
+}
+
+#features .col:nth-child(2) {
+  margin-top: 220px;
+}
+
 #features .slider {
+  text-align: center;
   width: 100%;
   margin: 0 auto 80px;
   position: relative;
@@ -264,11 +273,13 @@ section {
 }
 
 #features .slider .slider-img {
-  margin-left: -63px;
   position: absolute;
-  left: 0;
   -webkit-transition: .8s;
   transition: .8s;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 180px;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -280,64 +291,39 @@ section {
   pointer-events: auto;
 }
 
-#features .slider #slider-circle {
-  position: absolute;
-  left: 337px;
-  top: 121px;
-  width: 220px;
-  height: 467px;
-  background: url(../img/slider-circle.svg) no-repeat;
-}
-
 #features .slider .slider-btn {
-  position: absolute;
   width: 60px;
   height: 60px;
   background-color: #e7e7e7;
   background-image: url(../img/slider-icons.svg);
   background-repeat: no-repeat;
   background-size: 60px 300px;
-  border: 3px solid #ffffff;
+  border: 10px solid #ffffff;
   border-radius: 50px;
   text-align: center;
   -webkit-transition: .4s;
   transition: .4s;
+  display: inline-block;
+  transition: .4s;
 }
 
 #features .slider .slider-btn.active {
-  -webkit-transform: scale(1.46);
-          transform: scale(1.46);
-  -webkit-box-shadow: 0px 0px 60px 0px rgba(15, 65, 36, 0.15);
-          box-shadow: 0px 0px 60px 0px rgba(15, 65, 36, 0.15);
   background-color: #2ecc71;
 }
 
-#features .slider #slider-sound {
-  left: 379px;
-  top: 113px;
-}
-
 #features .slider #slider-days {
-  left: 482px;
-  top: 190px;
   background-position: 0 -60px;
 }
 
 #features .slider #slider-growth {
-  left: 521px;
-  top: 323px;
   background-position: 0 -120px;
 }
 
 #features .slider #slider-favorite {
-  left: 482px;
-  top: 459px;
   background-position: 0 -180px;
 }
 
 #features .slider #slider-interface {
-  left: 379px;
-  top: 535px;
   background-position: 0 -240px;
 }
 
@@ -432,6 +418,12 @@ footer p {
     background: url(../img/phone-desktop.png) center bottom;
     background-repeat: no-repeat;
   }
+  #features .col:nth-child(2) {
+    margin-top: 150px;
+  }
+  #features .slider .slider-img {
+    top: 110px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -480,17 +472,57 @@ footer p {
     border-radius: 26px;
   }
   #features {
-    display: -ms-grid;
-    display: grid;
-    grid-gap: 15px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    margin-top: 0;
     -ms-grid-columns: 1.2fr 1fr;
         grid-template-columns: 1.2fr 1fr;
   }
   #features .slider {
     margin-bottom: 0;
+  }
+  #features .slider .slider-img {
+    left: 0;
+    -webkit-transform: none;
+            transform: none;
+    margin-left: -63px;
+    top: 0;
+  }
+  #features .slider #slider-circle {
+    position: absolute;
+    left: 337px;
+    top: 121px;
+    width: 220px;
+    height: 467px;
+    background: url(../img/slider-circle.svg) no-repeat;
+  }
+  #features .slider .slider-btn {
+    position: absolute;
+    border: 3px solid white;
+  }
+  #features .slider .slider-btn.active {
+    -webkit-transform: scale(1.46);
+            transform: scale(1.46);
+    -webkit-box-shadow: 0px 0px 60px 0px rgba(15, 65, 36, 0.15);
+            box-shadow: 0px 0px 60px 0px rgba(15, 65, 36, 0.15);
+  }
+  #features .slider #slider-sound {
+    left: 379px;
+    top: 113px;
+  }
+  #features .slider #slider-days {
+    left: 482px;
+    top: 190px;
+  }
+  #features .slider #slider-growth {
+    left: 521px;
+    top: 323px;
+  }
+  #features .slider #slider-favorite {
+    left: 482px;
+    top: 459px;
+  }
+  #features .slider #slider-interface {
+    left: 379px;
+    top: 535px;
   }
   .col-2 {
     display: -ms-grid;

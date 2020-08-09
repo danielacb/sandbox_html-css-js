@@ -156,7 +156,7 @@ header {
     right: -300px;
     text-align: right;
     padding: 30px;
-    width: 300px;
+    width: calc(100% - 90px);
     height: 100vh;
     transition: .6s;
 
@@ -280,19 +280,27 @@ section {
 }
 
 #features {
+    margin-top: -80px;
+
+    & .col:nth-child(2) {
+        margin-top: 220px;
+    }
+
     .slider {
+        text-align: center;
         width: 100%;
         margin: 0 auto 80px;
         position: relative;
         min-height: 707px;
         align-items: center;
 
-        .slider-img {
-            margin-left: -63px;
-            position: absolute;
-            left: 0;
-            transition: .8s;
 
+        .slider-img {
+            position: absolute;
+            transition: .8s;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 180px;
             @include off;
 
             &.active {
@@ -300,61 +308,39 @@ section {
             }
         }
 
-        #slider-circle {
-            position: absolute;
-            left: 337px;
-            top: 121px;
-            width: 220px;
-            height: 467px;
-            background: url(../img/slider-circle.svg) no-repeat;
-        }
-
         .slider-btn {
-            position: absolute;
             width: 60px;
             height: 60px;
             background-color: #e7e7e7;
             background-image: url(../img/slider-icons.svg);
             background-repeat: no-repeat;
             background-size: 60px 300px;
-            border: 3px solid #ffffff;
+            border: 10px solid #ffffff;
             border-radius: 50px;
             text-align: center;
             transition: .4s;
+            display: inline-block;
+            transition: .4s;
+
 
             &.active {
-                transform: scale(1.46);
-                box-shadow: 0px 0px 60px 0px transparentize($color: $dark-green, $amount: .85);
                 background-color: $green;
             }
         }
 
-        #slider-sound {
-            left: 379px;
-            top: 113px;
-        }
-
         #slider-days {
-            left: 482px;
-            top: 190px;
             background-position: 0 -60px;
         }
 
         #slider-growth {
-            left: 521px;
-            top: 323px;
             background-position: 0 -120px;
         }
 
         #slider-favorite {
-            left: 482px;
-            top: 459px;
             background-position: 0 -180px;
         }
 
         #slider-interface {
-            left: 379px;
-            top: 535px;
             background-position: 0 -240px;
         }
     }
@@ -453,6 +439,15 @@ footer {
         background-repeat: no-repeat;
     }
 
+    #features {
+        .col:nth-child(2) {
+            margin-top: 150px;
+        }
+
+        .slider .slider-img {
+            top: 110px;
+        }
+    }
 }
 
 @media (min-width: 1024px) {
@@ -508,11 +503,63 @@ footer {
     }
 
     #features {
-        @include grid;
+        margin-top: 0;
         grid-template-columns: 1.2fr 1fr;
 
         .slider {
             margin-bottom: 0;
+
+            .slider-img {
+                left: 0;
+                transform: none;
+                margin-left: -63px;
+                top: 0;
+            }
+
+            #slider-circle {
+                position: absolute;
+                left: 337px;
+                top: 121px;
+                width: 220px;
+                height: 467px;
+                background: url(../img/slider-circle.svg) no-repeat;
+            }
+
+            .slider-btn {
+                position: absolute;
+                border: 3px solid white;
+
+
+                &.active {
+                    transform: scale(1.46);
+                    box-shadow: 0px 0px 60px 0px transparentize($color: $dark-green, $amount: .85);
+                }
+            }
+
+            #slider-sound {
+                left: 379px;
+                top: 113px;
+            }
+
+            #slider-days {
+                left: 482px;
+                top: 190px;
+            }
+
+            #slider-growth {
+                left: 521px;
+                top: 323px;
+            }
+
+            #slider-favorite {
+                left: 482px;
+                top: 459px;
+            }
+
+            #slider-interface {
+                left: 379px;
+                top: 535px;
+            }
         }
     }
 
@@ -644,10 +691,6 @@ footer {
         right: 0;
         background-image: url(../img/fruits/fruit-14.png);
     }
-
-
-
-
 }
 
 @media (hover: hover) {
