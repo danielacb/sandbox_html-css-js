@@ -11,4 +11,4 @@ _Template from [Symu.co](https://symu.co/freebies/templates-4/fitapp-psd-templat
 - Javascript click events to build a slider;
 - SVG Fragment Identifiers;
 
-See it live [here](https://danielacb.github.io/fitapp/).
+See it live [here](https://danielacb.github.io/layout-studies/fitapp/).
