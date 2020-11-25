@@ -4,7 +4,9 @@ Repository with a few templates that I coded in order to practice my front-end s
 
 ## CSS Icons Animation
 
-![CSS Icons Animation](https://danielacb.github.io/layout-studies/images/css-icons-animation.gif)
+<p align="center">
+  <img alt="Layout" src="https://github.com/danielacb/layout-studies/blob/main/images/css-icons-animation.gif?raw=true">
+</p>
 
 [See it live!](https://danielacb.github.io/layout-studies/css-icons-animation/)
 
