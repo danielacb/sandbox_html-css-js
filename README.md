@@ -2,28 +2,34 @@
 
 Repository with a few templates that I coded in order to practice my front-end skills
 
-## CSS Icons Animation
+### CSS Icons Animation
 
-<p align="center">
-  <img alt="Layout" src="https://github.com/danielacb/layout-studies/blob/main/images/css-icons-animation.gif?raw=true">
-</p>
+<a align="center" href="https://danielacb.github.io/layout-studies/css-icons-animation/">
+  <img alt="CSS Icon Animation" src="https://github.com/danielacb/layout-studies/blob/main/images/css-icons-animation.gif?raw=true">
+</a>
 
-[See it live!](https://danielacb.github.io/layout-studies/css-icons-animation/)
+[See it live!](https://danielacb.github.io/layout-studies/css-icons-animation/) ➡️
 
-## Yellow Moon
+### Yellow Moon
 
-![CSS Icons Animation](https://danielacb.github.io/layout-studies/images/yellow-moon.png)
+<a align="center" href="https://danielacb.github.io/layout-studies/yellow-moon/">
+  <img alt="Yellow Moon" src="https://raw.githubusercontent.com/danielacb/layout-studies/main/images/yellow-moon.png">
+</a>
 
-[See it live!](https://danielacb.github.io/layout-studies/yellow-moon/)
+[See it live!](https://danielacb.github.io/layout-studies/yellow-moon/) ➡️
 
-## HeyU
+### HeyU
 
-![CSS Icons Animation](https://danielacb.github.io/layout-studies/images/heyu.png)
+<a align="center" href="https://danielacb.github.io/layout-studies/heyu/">
+  <img alt="HeyU" src="https://danielacb.github.io/layout-studies/images/heyu.png">
+</a>
 
-[See it live!](https://danielacb.github.io/layout-studies/heyu/)
+[See it live!](https://danielacb.github.io/layout-studies/heyu/) ➡️
 
 ## FitApp
 
-![CSS Icons Animation](https://danielacb.github.io/layout-studies/images/fitapp.png)
+<a align="center" href="https://danielacb.github.io/layout-studies/fitapp/">
+  <img alt="FitApp" src="https://danielacb.github.io/layout-studies/images/fitapp.png">
+</a>
 
-[See it live!](https://danielacb.github.io/layout-studies/fitapp/)
+[See it live!](https://danielacb.github.io/layout-studies/fitapp/) ➡️
