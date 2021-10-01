@@ -10,4 +10,4 @@ _Template made by [graphberry.com](https://www.graphberry.com/item/yellow-moon-f
 - Icons as a font;
 - PNG sprite;
 
-See it live [here](https://danielacb.github.io/layout-studies/yellow-moon/)!
+See it live [here](https://danielacb.github.io/sandbox_html-css-js/yellow-moon/)!

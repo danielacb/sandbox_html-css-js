@@ -12,4 +12,4 @@ _Template from [Symu.co](https://github.com/danielacb/yellow-moon)_
 - Embed Video customization;
 - SVG Symbols;
 
-See it live [here](https://danielacb.github.io/layout-studies/heyu/).
+See it live [here](https://danielacb.github.io/sandbox_html-css-js/heyu/).
